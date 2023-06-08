@@ -1,9 +1,10 @@
 ---
-title: "Vulnere sceleris torva bovem si inexpugnabile dominos"
-author: "Aurelie Enrietto"
-date: "2020-02-28 12:33"
-image: "https://picsum.photos/seed/tempora-consectetur.jpg/960/640"
-description: "Assumenda est rerum in itaque voluptatem perspiciatis. Facere ratione maxime eaque rem."
+title: 'Vulnere sceleris torva bovem si inexpugnabile dominos'
+identifier: vulnere-sceleris-torva-bovem-si-inexpugnabile-dominos
+description: 'Assumenda est rerum in itaque voluptatem perspiciatis. Facere ratione maxime eaque rem.'
+date: 'Feb 28th, 2020'
+author: 'Aurelie Enrietto'
+image: 'https://picsum.photos/seed/tempora-consectetur.jpg/960/640'
 ---
 
 ## Utque in portans
