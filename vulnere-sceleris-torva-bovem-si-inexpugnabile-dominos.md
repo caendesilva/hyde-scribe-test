@@ -3,8 +3,8 @@ title: 'Vulnere sceleris torva bovem si inexpugnabile dominos'
 description: 'Assumenda est rerum in itaque voluptatem perspiciatis. Facere ratione maxime eaque rem.'
 date: 'Feb 28th, 2020'
 author: 'Aurelie Enrietto'
-image: media/vulnere-sceleris-torva-bovem-si-inexpugnabile-dominos-cover.png
-updated: '2023-06-11 18:34:46'
+image: vulnere-sceleris-torva-bovem-si-inexpugnabile-dominos-cover.png
+updated: '2023-06-11 18:35:30'
 ---
 
 ## Utque in portans
