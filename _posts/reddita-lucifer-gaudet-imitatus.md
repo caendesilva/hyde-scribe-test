@@ -1,9 +1,10 @@
 ---
-title: "Reddita lucifer gaudet imitatus"
-author: "Nevile MacFayden"
-date: "2021-11-27 16:00"
-image: "https://picsum.photos/seed/atque-et-omnis.png/960/640"
-description: "Enim possimus accusamus ipsum consequuntur. Rerum velit ut necessitatibus earum dignissimos voluptatibus aut."
+title: 'Reddita lucifer gaudet imitatus'
+description: 'Enim possimus accusamus ipsum consequuntur. Rerum velit ut necessitatibus earum dignissimos voluptatibus aut.'
+date: 'Nov 27th, 2021'
+author: 'Nevile MacFayden'
+image: 'https://picsum.photos/seed/atque-et-omnis.png/960/640'
+updated: '2023-06-11 12:17:58'
 ---
 
 ## Auras et ultima porrigitur et genus casusve
